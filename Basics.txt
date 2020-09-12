@@ -1,0 +1,15 @@
+Security Principal: essentially the name given to an entity. For example a user, computer or process. This security principal is generally a friendly name to make it easier to identify the entity. 
+
+Security Identifier (SID): Every object in Windows has a SID assigned to it. A SID is a unique number like a serial number. They always start with S. 
+
+ACL: a list of ACE (everyone with access to a resource). An ACL or Access Control List is a list of permissions
+
+ACE: an ACE or Access Control Entry is simply an entry in an ACL.
+
+For example, if you had a document on the file system, this document would have an Access Control List associated with it. This Access Control List would contain Access Control Entries which determine who has access. For example, it is common for files to be allowed access by administrators and the system user. If additional access is required, it is just a matter of adding an ACE to the ACL with the required permissions and the entity that requires access. 
+
+
+
+Misc:
+
+Registry profiles (SIDs): HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList

@@ -1,0 +1,39 @@
+Ideas: 
+- to work with files and folders, maybe I can modify my permissions on the parent folder. I believe Python runs with my permissions?
+- add myself as an admin with elevated permissions?
+- get elevated permissions for my app for a particular process?
+- write a powershell script to modify permissions (if necessary) and then process the files and folders
+
+*** see also: https://youtu.be/Ed_2BKn3QR8
+
+
+Access Control List
+
+Access Control Lists (ACLs) are those settings that define who gets access to which objects, along with the type of access in Active Directory. These settings are called Access Control Entries (ACEs), and they are also useful in enabling auditing object accesses.
+
+Each ACE refers to a security principal – Users, Groups and Processes and defines the object access rights (allowed or denied) for that principal. ACLs are highly flexible and more ACEs can be added as and when needed.
+
+A typical ACE contains the following information:
+
+    A Security Identifier (SID) that is unique to every trustee
+    An Access Mask, which is a 32 bit value that defines the operations that are either allowed or denied for the trustee in the ACE.
+    A flag that indicates the type of ACE viz., access denied ACE, access allowed ACE and system audit ACE.
+    A set of bit flags that determine if child containers or objects can inherit the ACE from their primary object or parent.
+
+When a security principal sends an Access Request for an object, the SID from the request is compared against the Access Control List. If the SID matches with that of a SID present in the ACL, then the security principal is granted access to the object based on the predefined rights – Eg: read, write, modify, delete, etc.
+
+
+
+
+- utilities
+icacls = command line (help = /?)
+takeown.exe
+
+---
+icacls
+
+F = Full access = 'Full Control' (read, execute, write, take ownership and change ACLs)
+IO = object inherit
+CI = container inherit
+
+When you have full control Plus inherit, new objects you create will inherit your access rights.
