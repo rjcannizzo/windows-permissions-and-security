@@ -1,0 +1,4 @@
+import subprocess
+    args = ["icacls", directory,
+            "/grant:r", 'LOCAL SERVICE:(OI)(CI)MF']
+    subprocess.check_call(args)
