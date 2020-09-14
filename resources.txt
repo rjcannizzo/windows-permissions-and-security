@@ -1,0 +1,4 @@
+Set-Acl: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-acl?view=powershell-7
+
+Good Powershell Book: https://www.amazon.com/Windows-PowerShell-Cookbook-Scripting-Microsofts-ebook/dp/B00ARN9MEK/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr=
+

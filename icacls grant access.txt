@@ -1,0 +1,18 @@
+To grant access to files or directories:
+
+	icacls *.* /grant Russ:(M)
+	
+	# If you're using a numeric SID, prefix number with '*'
+	icacls *.* /grant *S-1-5-21-1447812340-3468516883-2348326791-1001:(M)
+	
+	to add to the user's current permissions use /grant:r  
+	# this example add full access
+		icacls *.* /grant:r Russ:(F) /t
+	
+	
+	F - full access
+	M - modify access
+	RX - read and execute access
+	R - read-only access
+	W - write-only access
+	D - delete access
